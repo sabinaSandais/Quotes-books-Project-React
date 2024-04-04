@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="links">
         <Link to="/favorites">
-          <h3>Your Favorites</h3>{" "}
+          <h3>Your Favorites</h3>
         </Link>
       </div>
     </div>
