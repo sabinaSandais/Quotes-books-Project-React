@@ -1,32 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useFetch from "../hooks/useFetch";
 import { API_URL } from "../Api";
 import { useAppContext } from "../context/appContext";
 import { useNavigate } from "react-router-dom";
 
 const BookList = () => {
-  const [books, setBooks] = useState([]);
-
+  const { data: books, loading, error } = useFetch(API_URL);
   const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
-
   const navigate = useNavigate();
 
+  //const favoritesChecker = (id) => favorites.some((book) => book.id === id);
   const favoritesChecker = (id) => {
     const select = favorites.some((book) => book.id === id);
     return select;
   };
-  const getBooks = async (url) => {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      // console.log(data);
-      setBooks(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getBooks(API_URL);
-  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <div className="book-list">

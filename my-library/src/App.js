@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Favorites from "./components/Favorites";
-import BookDetails from "./components/BookDetails";
-import BookList from "./components/BookList";
+import Favorites from "./pages/Favorites";
+import BookDetails from "./pages/BookDetails";
+import BookList from "./pages/BookList";
 import Footer from "./components/Footer";
 
 function App() {
