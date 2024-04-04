@@ -7,22 +7,22 @@ const BookList = () => {
 
   const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
 
-  const favoritesChecker = (id)=>{
-    const boolean = favorites.some((book) => book.id === id);
-    return boolean;
-  }
-  const getMovies = async (url) => {
+  const favoritesChecker = (id) => {
+    const select = favorites.some((book) => book.id === id);
+    return select;
+  };
+  const getBooks = async (url) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setBooks(data);
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
-    getMovies(API_URL);
+    getBooks(API_URL);
   }, []);
 
   return (
@@ -44,8 +44,7 @@ const BookList = () => {
               <button onClick={() => addToFavorites(book)}>
                 Add to favorites
               </button>
-            )
-            }
+            )}
           </div>
         </div>
       ))}
