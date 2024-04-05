@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { BOOKS_DETAILS_URL } from "../Api";
+import BackButton from "../components/BackButton";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -11,8 +12,10 @@ const BookDetails = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="book-details">
-      <div>
+    
+    <div className="book-container">
+      <BackButton />
+      <div className="book-detail">
         <h2>{book?.title}</h2>
         <img src={book?.image_url} alt={book?.title} />
       </div>

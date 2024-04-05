@@ -1,4 +1,6 @@
+// appContext.js
 import React, { createContext, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AppContext = createContext();
 
@@ -12,6 +14,7 @@ export const useAppContext = () => {
 
 export const AppContextProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
+  const navigate = useNavigate();
 
   const addToFavorites = (book) => {
     setFavorites((prevFavorites) => [...prevFavorites, book]);
@@ -21,12 +24,17 @@ export const AppContextProvider = ({ children }) => {
     setFavorites((prevFavorites) => prevFavorites.filter((book) => book.id !== id));
   };
 
+  const navigateBack = () => {
+    navigate(-1);
+  };
+
   return (
-    <AppContext.Provider value={{ favorites, addToFavorites, removeFromFavorites }}>
+    <AppContext.Provider value={{ favorites, addToFavorites, removeFromFavorites, navigateBack }}>
       {children}
     </AppContext.Provider>
   );
 };
+
 
 
 // import React, { createContext, useContext, useState } from "react";
