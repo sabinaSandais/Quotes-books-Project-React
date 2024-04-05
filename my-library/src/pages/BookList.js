@@ -16,7 +16,7 @@ const BookList = () => {
 
   const favoritesChecker = (id) => favorites.some((book) => book.id === id);
 
-  // Filter books based on search term
+  
   const filteredBooks = books?.filter((book) =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -31,7 +31,7 @@ const BookList = () => {
         {filteredBooks.map((book) => (
           <div key={book.id} className="book">
             <div>
-              <h4 className="book-title">{book.title}</h4>
+              <h2 className="book-title">{book.title}</h2>
             </div>
             <div>
               <img
@@ -59,6 +59,9 @@ const BookList = () => {
 };
 
 export default BookList;
+
+
+
 // import React from "react";
 // import useFetch from "../hooks/useFetch";
 // import { API_URL } from "../Api";
