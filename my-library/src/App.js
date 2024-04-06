@@ -5,6 +5,7 @@ import Favorites from "./pages/Favorites";
 import BookDetails from "./pages/BookDetails";
 import BookList from "./pages/BookList";
 import Footer from "./components/Footer";
+import Quotes from "./pages/Quotes";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<BookList />} />
         <Route path="/book/:id" element={<BookDetails />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/quotes" element={<Quotes />} />
       </Routes>
       <Footer />
     </div>
