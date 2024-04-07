@@ -22,7 +22,7 @@ const BookList = () => {
       {books.map((book) => (
         <div key={book.id} className="book">
           <div>
-            <h3>{book.title}</h3>
+          <h3>{book.title.length > 15 ? book.title.substring(0, 15) + "..." : book.title}</h3>
           </div>
           <div>
             <img
