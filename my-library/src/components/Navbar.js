@@ -1,24 +1,23 @@
 import React from "react";
 import "./Navbar.css";
-
 import { Link } from "react-router-dom";
-
-// import logo from '../assets/book.logo.png'
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* <div> <img className="logo" src={logo} alt="logo" /></div> */}
       <div>
-        <h1>My Library</h1>
+        <h1>Quotes And Books</h1>
       </div>
       <div className="links">
+        <Link to={"/"}>
+          <h4>Home</h4> </Link>
+      <Link to="/bookList">
+          <h4>Books</h4>
+        </Link>
         <Link to="/favorites">
-          <h3>Your Favorites</h3>
+          <h4>Your Favorites</h4>
         </Link>
-        <Link to="/quotes">
-          <h3>Quotes</h3>
-        </Link>
+       
       </div>
     </div>
   );

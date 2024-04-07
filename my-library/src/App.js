@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Favorites from "./pages/Favorites";
 import BookDetails from "./pages/BookDetails";
 import BookList from "./pages/BookList";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Quotes from "./pages/Quotes";
 
 function App() {
@@ -12,12 +12,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<BookList />} />
+        <Route path="/" element={<Quotes />} />
         <Route path="/book/:id" element={<BookDetails />} />
         <Route path="/favorites" element={<Favorites />} />
-        <Route path="/quotes" element={<Quotes />} />
+        <Route path="/bookList" element={<BookList />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

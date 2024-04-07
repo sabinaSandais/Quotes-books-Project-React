@@ -1,0 +1,29 @@
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+  /* background-color:rgb(189, 173, 173); */
+  /* background-color: rgb(42, 40, 40); */
+  min-height: 100vh;
+}
+
+.no-favorites {
+  color: rgb(181, 25, 25);
+  font-size: 3em;
+  text-align: center;
+  min-height: 60vh;
+
+}
+
+.fav-btn {
+  padding: 20px;
+  background-color: rgb(181, 25, 25);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 300px;
+  font-size: larger;
+}

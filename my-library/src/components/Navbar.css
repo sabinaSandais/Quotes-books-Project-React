@@ -1,44 +1,64 @@
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f3939;
+  color: #fff;
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.links h4 {
+  margin: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Other styles omitted for brevity */
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .links h3 {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .links {
+    flex-direction: column;
     align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    height: 60px;
   }
-  
-  .navbar h1 {
-    margin: 0;
+
+  .links h3 {
+    padding: 5px 0;
   }
-  
-  /* .links {
-    display: flex;
-    align-items: center;
-  } */
-  
-  /* .links h3 {
-    margin: 0;
-    padding: 0 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .links h3:hover {
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-    }
-  
-    .navbar h1 {
-      margin-bottom: 10px;
-    }
-  
-   
-  }  */
+}
+
   

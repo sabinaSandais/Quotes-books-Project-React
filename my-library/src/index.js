@@ -12,9 +12,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AppContextProvider>
-        <SearchProvider>
+        {/* <SearchProvider> */}
         <App />
-        </SearchProvider>
+        {/* </SearchProvider> */}
       </AppContextProvider>
     </BrowserRouter>
   </React.StrictMode>
