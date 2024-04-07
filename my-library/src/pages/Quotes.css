@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* background-color:   #3f3939; */
   background: linear=gradient(145 deg, #ffffffbd, #ffd6a7ba);
 
   width: 60%;

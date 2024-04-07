@@ -34,6 +34,8 @@ export const AppContextProvider = ({ children }) => {
     navigate(-1);
   };
 
+  
+
   return (
     <AppContext.Provider
       value={{ favorites, addToFavorites, removeFromFavorites, navigateBack }}
