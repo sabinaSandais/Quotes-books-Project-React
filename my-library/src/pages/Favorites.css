@@ -1,11 +1,9 @@
 .favorites {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: beige;
-  /* background-color:rgb(189, 173, 173); */
-  /* background-color: rgb(42, 40, 40); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4e9e1;
   min-height: 100vh;
 }
 
@@ -14,7 +12,6 @@
   font-size: 3em;
   text-align: center;
   min-height: 60vh;
-
 }
 
 .fav-btn {

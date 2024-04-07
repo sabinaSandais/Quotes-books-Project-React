@@ -34,11 +34,16 @@ export const AppContextProvider = ({ children }) => {
     navigate(-1);
   };
 
-  
+  const trimTitle = (title, maxLength) => {
+    if (title.length > maxLength) {
+      return title.substring(0, maxLength) + "...";
+    }
+    return title;
+  };
 
   return (
     <AppContext.Provider
-      value={{ favorites, addToFavorites, removeFromFavorites, navigateBack }}
+      value={{ favorites, addToFavorites, removeFromFavorites, navigateBack, trimTitle }}
     >
       {children}
     </AppContext.Provider>

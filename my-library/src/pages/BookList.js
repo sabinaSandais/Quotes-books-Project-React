@@ -6,7 +6,8 @@ import "./BookList.css";
 
 const BookList = () => {
   const { data: books, loading, error } = useFetch(API_URL);
-  const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
+  const { favorites, addToFavorites, removeFromFavorites, trimTitle } =
+    useAppContext();
   const navigate = useNavigate();
 
   const favoritesChecker = (id) => {
@@ -22,7 +23,7 @@ const BookList = () => {
       {books.map((book) => (
         <div key={book.id} className="book">
           <div>
-          <h3>{book.title.length > 15 ? book.title.substring(0, 15) + "..." : book.title}</h3>
+            <h3>{trimTitle(book.title, 15)}</h3>
           </div>
           <div>
             <img
