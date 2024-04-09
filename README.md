@@ -3,7 +3,7 @@
 Welcome to My Book App! This app is designed to help book enthusiasts keep track of their reading list, discover new books, and manage their favorites.
 App welcomes with a nice quotation to give you a kick start.
 
-[Visit My Book App](https://my-book-app.herokuapp.com)
+[Visit My Book App](https://react-library-sabina.netlify.app/)
 
 ## Screenshots
 
