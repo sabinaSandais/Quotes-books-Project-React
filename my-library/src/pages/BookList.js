@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { API_URL } from "../Api";
 import { useAppContext } from "../context/appContext";

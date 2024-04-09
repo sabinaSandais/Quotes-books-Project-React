@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #3f3939;  */
-  /* background-color: #ca3f79; */
   background-color: #d16190;
   color: #fff;
   padding: 10px 20px;
@@ -13,7 +11,6 @@
 .links {
   display: flex;
   align-items: center;
-
 }
 
 .links h4 {
@@ -26,16 +23,14 @@
   font-size: 1.2em;
   font-weight: 600;
 }
-.navbar .links a {
-  text-decoration: none; 
-  color: #fff; 
 
+.navbar .links a {
+  text-decoration: none;
+  color: #fff;
 }
 .navbar .links h4:hover {
-  color: black; 
+  color: black;
 }
-
-
 
 .links h4:hover {
   color: #f0f0f0;

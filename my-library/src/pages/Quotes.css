@@ -1,6 +1,5 @@
 .quotes-cont {
   background: url("../../public/assets/images/bg-book.png");
-  /* url("../../public/assets/images/try.jpeg"); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -138,7 +137,6 @@
     .quotes-card {
       width: 80%;
       padding: 5%;
-
     }
 
     .quote-text {
