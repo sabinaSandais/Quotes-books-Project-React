@@ -18,3 +18,9 @@ h2 {
   text-align: center;
   margin-top: 50px;
 }
+.error {
+  color: rgb(181, 25, 25);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+}
