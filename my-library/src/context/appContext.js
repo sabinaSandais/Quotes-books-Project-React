@@ -14,7 +14,6 @@ export const useAppContext = () => {
 export const AppContextProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const navigate = useNavigate();
-  // const history = useHistory();
 
   const addToFavorites = (book) => {
     setFavorites((prevFavorites) => [...prevFavorites, book]);
@@ -25,10 +24,8 @@ export const AppContextProvider = ({ children }) => {
       prevFavorites.filter((book) => book.id !== id)
     );
   };
-  // const navigateToHomePage = () => {
 
-  //   history.push('/'); // Redirects to the home page
-  // };
+  const favoritesChecker = (id) => favorites.some((book) => book.id === id);
 
   const navigateBack = () => {
     navigate(-1);
@@ -43,7 +40,14 @@ export const AppContextProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ favorites, addToFavorites, removeFromFavorites, navigateBack, trimTitle }}
+      value={{
+        favorites,
+        addToFavorites,
+        removeFromFavorites,
+        navigateBack,
+        favoritesChecker,
+        trimTitle,
+      }}
     >
       {children}
     </AppContext.Provider>

@@ -1,15 +1,11 @@
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
-import BackButton from "../components/BackButton";
 import "./Quotes.css";
+import { API_URL } from "../Api";
 
 const Quotes = () => {
   const [index, setIndex] = useState(0);
-  const {
-    data: books,
-    loading,
-    error,
-  } = useFetch("https://example-data.draftbit.com/books");
+  const { data: books, loading, error } = useFetch(API_URL);
   const [quote, setQuote] = useState("");
 
   const getQuote = () => {
@@ -35,12 +31,8 @@ const Quotes = () => {
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
       </div>
-      <div>
-        <BackButton />
-      </div>
     </div>
   );
 };
 
 export default Quotes;
-

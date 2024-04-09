@@ -7,10 +7,6 @@ h3 {
   font-size: 2em;
 }
 
-
-
-
-
 h2 {
   color: red;
   font-size: 4em;
@@ -22,14 +18,3 @@ h2 {
   text-align: center;
   margin-top: 50px;
 }
-/* 
-.back-button {
-  padding: 10px;
- 
-  color: black;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 100px;
-  font-size: larger;
-} */

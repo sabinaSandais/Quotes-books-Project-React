@@ -3,21 +3,16 @@ import "./Favorites.css";
 import BackButton from "../components/BackButton";
 
 const Favorites = () => {
-  const { favorites, removeFromFavorites, trimTitle} = useAppContext();
-
-  const favoritesChecker = (id) => {
-    return favorites.some((book) => book.id === id);
-  };
+  const { favorites, removeFromFavorites, favoritesChecker, trimTitle } =
+    useAppContext();
 
   return (
     <div className="favorites">
-      
-
       {favorites.length > 0 ? (
         favorites.map((book) => (
           <div key={book.id} className="book">
             <div>
-              <h4>{trimTitle(book.title, 15)}</h4>
+              <h4 className="heading">{trimTitle(book.title, 15)}</h4>
             </div>
             <div>
               <img src={book.image_url} alt={book.title} />
@@ -32,9 +27,7 @@ const Favorites = () => {
                 </button>
               )}
             </div>
-      
           </div>
-          
         ))
       ) : (
         <h1 className="no-favorites">No favorites yet</h1>

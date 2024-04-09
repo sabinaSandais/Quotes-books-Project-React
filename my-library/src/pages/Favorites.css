@@ -24,3 +24,7 @@
   width: 300px;
   font-size: larger;
 }
+.heading {
+  font-size: 2em;
+  margin: 5px;
+}
