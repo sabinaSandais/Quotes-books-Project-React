@@ -1,69 +1,62 @@
-
-.book-list-page{
- background-color: rgb(255, 232, 235); 
+.book-list-page {
+  background-color: rgb(255, 232, 235);
   /* background-color: #ccc; */
-    /* background-color: beige; */
- 
-  
+  /* background-color: beige; */
 }
 .book-list {
-    min-height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-   
-    
-  
-  }
-  
-  img {
-    width: 300px;
-    height: 350px;
-    transition: all 0.3s ease;
-    border-radius: 15px 15px 5px 5px;
-    margin: 10px 0 0 0;
-  }
-  img:hover {
-    transform: scale(1.05);
-  }
-  .book {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  
-  .add-btn {
-    padding: 20px;
-    background-color: #3f3939;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 300px;
-    font-size: larger;
-  }
-  .remove-btn {
-    padding: 20px;
-    background-color: #201c1c;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 300px;
-    font-size: larger;
-  }
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+img {
+  width: 300px;
+  height: 350px;
+  transition: all 0.3s ease;
+  border-radius: 15px 15px 5px 5px;
+  margin: 10px 0 0 0;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.book {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.add-btn {
+  padding: 20px;
+  background-color: #3f3939;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 300px;
+  font-size: larger;
+}
+.remove-btn {
+  padding: 20px;
+  background-color: #201c1c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 300px;
+  font-size: larger;
+}
 @media screen and (max-width: 768px) {
-    .book-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .book-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media screen and (max-width: 576px) {
-    .book-list {
-      grid-template-columns: repeat(1, 1fr);
-    }
+}
+
+@media screen and (max-width: 576px) {
+  .book-list {
+    grid-template-columns: repeat(1, 1fr);
   }
+}

@@ -28,3 +28,10 @@
   font-size: 2em;
   margin: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .no-favorites {
+    font-size: 2.5em;
+    
+  }
+}

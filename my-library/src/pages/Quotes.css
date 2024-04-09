@@ -1,7 +1,6 @@
 .quotes-cont {
-   background:  
-    url("../../public/assets/images/bg-book.png");
-    /* url("../../public/assets/images/try.jpeg"); */
+  background: url("../../public/assets/images/bg-book.png");
+  /* url("../../public/assets/images/try.jpeg"); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -16,17 +15,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color:   #3f3939; */
   background: linear=gradient(145 deg, #ffffffbd, #ffd6a7ba);
-
   width: 60%;
-
   padding: 2%;
   border-radius: 10px;
   color: black;
   box-shadow: 4px 4px 10px #00000072, -2px -2px 10px #000000;
   margin-bottom: 20px;
 }
+
 .quote-text {
   color: rgb(172, 73, 46);
   font-size: 2rem;
@@ -38,7 +35,7 @@
 
 .btn {
   margin: 30px;
-  padding: 35px 45px;
+  padding: 30px 40px;
   border: none;
   outline: none;
   color: #fff;
@@ -111,7 +108,6 @@
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 1024px) {
   .quotes-card {
     width: 80%;
@@ -140,12 +136,17 @@
 
   @media screen and (max-width: 480px) {
     .quotes-card {
-      width: 100%;
+      width: 80%;
       padding: 5%;
+
     }
 
     .quote-text {
       font-size: 1rem;
+    }
+    .btn {
+      margin: 20px;
+      padding: 25px 40px;
     }
   }
 }
