@@ -35,4 +35,38 @@
 .links h4:hover {
   color: #f0f0f0;
 }
+@media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
 
+  .links {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .links h3 {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links h3 {
+    padding: 5px 0;
+  }
+  .navbar {
+    height: auto;
+  }
+}
