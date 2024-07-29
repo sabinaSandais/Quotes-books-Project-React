@@ -1,4 +1,14 @@
-
+.back-btn {
+  background-color: #d16190;
+  color: white;
+  padding: 2rem 2.5rem;
+  border: none;
+  border-radius: 5px 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 @media screen and (max-width: 768px) {
   .back-btn {
     padding: 1.5rem 2rem;
